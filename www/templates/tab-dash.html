@@ -1,0 +1,149 @@
+<ion-view view-title="首页">
+  <ion-content class="" overflow-scroll="true" >
+    <ion-slide-box on-slide-changed="slideHasChanged($index)" auto-play="true" does-continue="true" slide-interval=2000 show-pager="true" pager-click="pageClick(index)" active-slide="model.activeIndex" delegate-handle="delegateHandler">
+      <ion-slide>
+        <div class="box">
+          <img style="width: 100%" src="http://img5.imgtn.bdimg.com/it/u=4041718731,746112096&fm=21&gp=0.jpg">
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="box">
+          <img style="width: 100%" src="http://down77.yousiji.com/uploads1/allimg/c101123/12Z4Qc10S10-193502.jpg">
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+    <div class="height75 bgc_white">
+        		<div class="row text_center font_size12 color_61646c padding_top25 padding_bottom25" style="">
+                		<div class="col-25 text_center">
+                			<div>
+                				<a href="gonggaozhongxin.html" class="color_61646c text_decoration_none">
+									<img class="width42 height42" src="img/gg.png"/>
+									<div class="height20 line_height20">公告中心</div>
+                        		</a>
+                        	</div>
+                        </div>
+                		<div class="col-25">
+                			<div>
+								<a href="activity.html"  class="color_61646c text_decoration_none">
+									<img class="width42 height42" src="img/hd.png"/>
+									<div class="height20 line_height20">活动专区</div>
+            					</a>
+                			</div>
+							
+                        </div>
+                		<div class="col-25">
+                			<div>
+								<a href="security.html"  class="color_61646c text_decoration_none">
+									<img class="width42 height42" src="img/aq.png"/>
+									<div class="height20 line_height20">安全保障</div>
+            					</a>
+                			</div>							
+                        </div>
+						<div class="col-25">
+                			<div>
+								<a href="xinshouzhiyin.html"  class="color_61646c text_decoration_none">
+									<img class="width42 height42" src="img/xs.png"/>
+									<div class="height20 line_height20">新手指引</div>
+            					</a>
+                			</div>	
+                        </div>
+                </div>
+        </div>
+        
+        
+        <div class="  bgc_white">
+        		<div class="row height40 line_height40 text_center borderbottom_shouye">
+                		<div class=" col-50 borderright_shouye" style="">
+                        	<p style="font-size:18px;  overflow:hidden; margin-left: 32%;">
+                            	<!-- <span class="font_size14 clolora8abb4 ">累计成交</span>
+                            	<span class="font_size13 clolor62656c" id="investment_money"></span> -->
+                            	<i style="float:left; width:24px; width:7.5vw; height:36px; height:11.25vw;"><img src="img/index_register.png" style="width:100%; margin-top:11px; margin-top:3.4375vw;"/></i>
+                            	<a href="register.html" style="margin-left:8px; margin-left:2.5vw; text-decoration:none; color:#ff4545; height:50px; height:15.625vw; float:left; line-height:50px; line-height:15.625vw;">注册</a>
+                            </p>
+                		</div>
+                		<div class=" col-50">
+                        	<p style="font-size:18px; overflow:hidden; margin-left: 32%;">
+                            	<!-- <span class="font_size14 clolora8abb4">累计用户</span>
+                                <span class="font_size13 clolor62656c" id="user_count"></span> -->
+                                <i style="float:left; width:20px; width:6.25vw; height:36px; height:11.25vw;"><img src="img/index_login.png" style="width:100%; margin-top:11px; margin-top:3.4375vw;"/></i>
+                            	<a href="wap_login.html" style="text-decoration:none; margin-left:8px;  margin-left:2.5vw; color:#12b7f5; height:50px; height:15.625vw; float:left; line-height:50px; line-height:15.625vw;">登录</a>
+                            </p>
+                		</div>
+                </div>
+                
+                
+                
+                
+                <div class="row margin_top17 height45 line_height45 text_center color_ff7373 font_size14 ">
+                		<div class="col padding_top5" id="name_">
+                			新手专享
+                        </div>
+                </div>
+                
+                
+                
+                
+                
+                <div class="row ">
+                		<div class="col-25 font_size13 text_center color_c1c1c1">
+                        	<div class=" margin_top45 clolor62656c">
+                        		<span class="font_size25" id="min_limit"></span>100元
+                        	</div>
+                            <div class=" ">
+								起投金额
+                            </div>
+                        </div>
+                		<div  class="col-50 color_ff7373 text_center" style="position:relative;">
+							<div class="row">
+								<div class="col width160 height80 " style="overflow:hidden;">
+									<img id="circleRotate" style="z-index:1" class="margin_top5 width160 height160" src="img/circleRotate.png" />
+		
+								</div>
+							</div>
+							<div class="row"  style="position:absolute;left:0;top:0;z-indx:2">
+							
+							<div class="col padding_top40">
+									
+									<div class=""><span id="circleValue" class="font_size30"></span>30%</div>
+									<div class="font_size13 margin_top10">预期年化</div>
+							</div> 
+							</div>
+							
+                        </div>
+                		<div class="col-25 font_size13 text_center color_c1c1c1">
+                        	<div class=" margin_top45 clolor62656c">
+                        		<span class="font_size25" id="period_"></span><span id="period_type">7期</span>
+                        	</div>
+                            <div class="">
+                            	期限
+                            </div>
+                        </div>
+                
+                </div>
+                <input type="hidden" value="" id="postId"/>
+               <a href="javascript:void(0);">
+               		<div id="tj_post" style="border-radius:30px" class=" margin0_auto margin_top20 text-center width150 height40 line_height40 font_size15 border_radius bgc_red color_white" >立即抢购</div>
+               	</a>        
+               	
+               	<div class="height30 bgc_white"></div>
+        
+        </div>        
+        
+           
+		        <input type="image" value="index" src="" style="display:none;" />         
+		        <div class="ownNavigation"></div>
+        		 <script>
+					
+					  $(function(){
+						  $(".ownNavigation").load("ownNavigation.html");
+						  
+						  scrollHeight()
+					  })
+				</script>
+		  
+		  
+  	</div>
+		
+  </ion-content>
+</ion-view>
+
